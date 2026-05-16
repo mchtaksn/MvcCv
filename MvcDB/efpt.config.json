@@ -1,0 +1,86 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "DbCvContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "IrregularWords": null,
+   "MinimumProductVersion": "2.6.1465",
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PluralRules": null,
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "MvcDB.Models",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "SingularRules": null,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[TBLADMIN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLDENEYIMLERIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLEGITIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLHAKKIMIZDA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLHOBILERIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLILETISIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLSERTIFIKALARIM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLSOSYALMEDYA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TBLYETENEKLERIM]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseInternalAccessModifiersForSprocsAndFunctions": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false,
+   "UseTypedTvpParameters": true
+}

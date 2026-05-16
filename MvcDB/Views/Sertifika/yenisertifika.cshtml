@@ -1,0 +1,18 @@
+﻿@model MvcDB.Models.Tblsertifikalarim
+@{
+    ViewData["Title"] = "yenisertifika";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Sertifika Ekleme Sayfası</h4>
+<br />
+<form method="post">
+    @Html.Label("Açıklama")
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+
+</form>
+
+

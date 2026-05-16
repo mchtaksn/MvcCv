@@ -1,0 +1,11 @@
+﻿@using MvcDB.Models
+@model List<Tblhobilerim>
+
+<div class="resume-section-content">
+    @foreach (var hobi in Model)
+    {
+    <h2 class="mb-5">@hobi.Aciklama</h2>
+   
+    <p>@hobi.Aciklama2 </p>
+    }
+</div>

@@ -1,0 +1,37 @@
+﻿@using MvcDB.Models
+@model List<Tblegitim>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Eğitim Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Başlık</th>
+        <th>Alt Başlık1</th>
+        <th>Alt Başlık2</th>
+        <th>Tarih</th>
+        <th>GNO</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var mdo in Model)
+    {
+        <tr>
+            <td>@mdo.Id</td>
+            <td>@mdo.Baslik</td>
+            <td>@mdo.Altbaslik1</td>
+            <td>@mdo.Altbaslik2</td>
+            <td>@mdo.Tarih</td>
+            <td>@mdo.Gno</td>
+            <td><a href="/Egitim/egitimsil/@mdo.Id" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Egitim/egitimdüzenle/@mdo.Id" class="btn btn-success">Düzenle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Egitim/egitimekle/" class="btn btn-primary">Yeni Eğitim Ekle</a>
+
+

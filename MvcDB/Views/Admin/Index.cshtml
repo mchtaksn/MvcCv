@@ -1,0 +1,32 @@
+﻿@using MvcDB.Models
+@model List<Tbladmin>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Admin İşlemleri</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Kullanıcı Adı</th>
+        <th>Düzenle</th>
+        <th>Kaldır</th>
+
+    </tr>
+    @foreach (var mdo in Model)
+    {
+        <tr>
+            <td>@mdo.Id</td>
+            <td>@mdo.Kullaniciadi</td>
+           
+            <td><a href="/Admin/admindüzenle/@mdo.Id" class="btn btn-success">Düzenle</a></td>
+            <td><a href="/Admin/adminsil/@mdo.Id" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/adminekle/" class="btn btn-primary">Yeni Kullanıcı Ekle</a>
+
+
+

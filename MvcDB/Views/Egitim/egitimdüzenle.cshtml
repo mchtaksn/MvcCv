@@ -1,0 +1,34 @@
+﻿@model MvcDB.Models.Tblegitim
+@{
+    ViewData["Title"] = "egitimdüzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Deneyim Güncelleme Sayfası</h4>
+<br />
+<form method="post">
+    @Html.Label("Deneyim ID")
+    @Html.TextBoxFor(x => x.Id ,new { @class = "form-control" })
+    <br />
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.Label("Alt Başlık1")
+    @Html.TextBoxFor(x => x.Altbaslik1, new { @class = "form-control" })
+    <br />
+    @Html.Label("Alt Başlık 2")
+    @Html.TextBoxFor(x => x.Altbaslik2, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextAreaFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+    @Html.Label("GNO")
+    @Html.TextAreaFor(x => x.Gno, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+
+</form>
+
+

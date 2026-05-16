@@ -1,0 +1,16 @@
+﻿@using MvcDB.Models
+@model List<Tblsertifikalarim>
+<div class="resume-section-content">
+   
+
+  
+    <h2 class="mb-5">ALINAN SERTİFİKALAR</h2>
+    @foreach (var sert in Model)
+    {
+    <ul class="fa-ul mb-0">
+        <li>
+            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+            @sert.Aciklama
+    </ul>
+    }
+</div>

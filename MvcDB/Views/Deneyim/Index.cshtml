@@ -1,0 +1,33 @@
+﻿@using MvcDB.Models
+@model List<Tbldeneyimlerim>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Deneyim Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Başlık</th>
+        <th>Alt Başlık</th>
+        <th>Açıklama</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var mdo in Model)
+    {
+        <tr>
+            <td>@mdo.Id</td>
+            <td>@mdo.Baslik</td>
+            <td>@mdo.Altbaslik</td>
+            <td>@mdo.Aciklama</td>
+            <td>@mdo.Tarih</td>
+            <td><a href="/Deneyim/DeneyimSil/@mdo.Id" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Deneyim/DeneyimGetir/@mdo.Id" class="btn btn-success">Düzenle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Deneyim/DeneyimEkle/" class="btn btn-primary">Yeni Deneyim Ekle</a>
+
